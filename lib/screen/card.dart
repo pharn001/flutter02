@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'MyHomePage.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
@@ -85,20 +86,86 @@ class _MyHomePageState extends State<Myno1> {
                 crossAxisSpacing: 40,
                 mainAxisSpacing: 30,
                 children: [
-                  itemDashboard(
-                      'Videos', FontAwesomeIcons.videoSlash, Colors.deepOrange),
-                  itemDashboard(
-                      'Analytics', FontAwesomeIcons.anglesUp, Colors.green),
-                  itemDashboard(
-                      'Audience', FontAwesomeIcons.audible, Colors.purple),
-                  itemDashboard(
-                      'Comments', FontAwesomeIcons.comment, Colors.brown),
-                  itemDashboard(
-                      'Revenue', FontAwesomeIcons.moneyBill, Colors.indigo),
-                  itemDashboard('Upload', FontAwesomeIcons.upload, Colors.teal),
-                  itemDashboard('About', FontAwesomeIcons.user, Colors.blue),
-                  itemDashboard(
-                      'Contact', FontAwesomeIcons.phone, Colors.pinkAccent),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => MyHomePage()));
+                    },
+                    child: itemDashboard(
+                        "Home", FontAwesomeIcons.viadeo, Colors.green),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => MyHomePage()));
+                    },
+                    child: itemDashboard(
+                        'Analytics', FontAwesomeIcons.anglesUp, Colors.green),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => MyHomePage()));
+                    },
+                    child: itemDashboard(
+                        'Audience', FontAwesomeIcons.audible, Colors.purple),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => MyHomePage()));
+                    },
+                    child: itemDashboard(
+                        'Comments', FontAwesomeIcons.comment, Colors.brown),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => MyHomePage()));
+                    },
+                    child: itemDashboard(
+                        'Revenue', FontAwesomeIcons.moneyBill, Colors.indigo),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => MyHomePage()));
+                    },
+                    child: itemDashboard(
+                        'About', FontAwesomeIcons.user, Colors.blue),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => MyHomePage()));
+                    },
+                    child: itemDashboard(
+                        'Contact', FontAwesomeIcons.phone, Colors.pinkAccent),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => MyHomePage()));
+                    },
+                    child: itemDashboard(
+                        'Contact', FontAwesomeIcons.phone, Colors.pinkAccent),
+                  )
                 ],
               ),
             ),
