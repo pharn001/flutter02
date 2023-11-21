@@ -100,6 +100,24 @@ class _MyHomePageState extends State<MyHomePage> {
                     fontSize: 20),
               ),
             ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 10.0, horizontal: 30.0),
+                  backgroundColor: Colors.amber[300],
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(4.0))),
+              onPressed: () {
+                Navigator.pushNamed(context, AppRouter.cardd);
+              },
+              child: const Text(
+                "Go cardview",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20),
+              ),
+            ),
             Text(number.toString()),
           ]),
         ),

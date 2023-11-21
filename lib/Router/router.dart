@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:xxx/screen/Button.dart';
 import 'package:xxx/screen/showAlert.dart';
 import 'package:xxx/screen/list.dart';
+import 'package:xxx/screen/card.dart';
 
 class AppRouter {
   static const home = '';
@@ -11,11 +12,13 @@ class AppRouter {
   static const button = 'button';
   static const alert1 = 'alert';
   static const isg = 'list item';
+  static const cardd = "cardd";
   static get all => <String, WidgetBuilder>{
         home: (context) => const MyHomePage(),
         newscreen: (context) => const NewScreen(),
         button: (context) => const Mybutton(),
         alert1: (context) => const Myalert(),
-        isg: (context) => const Mylistview()
+        isg: (context) => const Mylistview(),
+        cardd: (context) => const Myphar()
       };
 }
